@@ -11,9 +11,9 @@ a{
     text-decoration: none;
 }
 .container{
-    border: 1px solid red;
     height: auto;
     background-color: rgba(255,255,255,.6);
+    /* margin: 0 auto; */
 }
 
 header{
