@@ -11,6 +11,7 @@ a{
     text-decoration: none;
 }
 .container{
+    /* width: 100%; */
     height: auto;
     background-color: rgba(255,255,255,.6);
     /* margin: 0 auto; */
@@ -23,6 +24,7 @@ header{
 }
 
 #search-area{
+    width: 50%;
     border-bottom: 1px solid var(--color);
     padding: 10px;
 }
@@ -83,14 +85,15 @@ header{
 /* 모바일 버전 메뉴바 */
 @media screen and (max-width:769px){
     .today-time{
+        width: 50%;
         font-size: 1em;
         font-weight: bold;
         color: var(--text-color);
         margin-top: 10px;
     }
     #w-city{
-        width: 200px;
-        height: 10px;
+        width: 100px;
+        height: 40px;
         background-color: transparent;
         border: none;
         color: var(--text-color);
@@ -153,6 +156,7 @@ header{
 /* 태블릿 */
 @media screen and (min-width:768px) and (max-width:1023px){
     .today-time{
+        width: 50%;
         font-size: 1.3em;
         font-weight: bold;
         color: var(--text-color);
@@ -196,6 +200,7 @@ header{
 /* 노트북 */
 @media screen and (min-width:1024px) {
     .today-time{
+        width: 50%;
         font-size: 2em;
         font-weight: bold;
         color: var(--text-color);
