@@ -50,49 +50,62 @@ $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=37.5666805&lon=12
     // 현재온도 아이콘
     let wiconUrl = '<img src="http://openweathermap.org/img/wn/' + result.weather[0].icon + '.png" alt="' + result.weather[0].description + '">';
     $(".today-icon").html(wiconUrl);
-
-    let current = result.main.temp
-
+    
     if (result.weather[0].main === "Clouds") {
         $("body").css({
             "background-image": "url('imges/weather.jpg')",
             "background-position": "center center",
-            "background-repeat": "no-repeat"
+            "background-repeat": "no-repeat",
+            "background-size" : "cover"
         });
     } else if (result.weather[0].main === "Clear") {
         $("body").css({
             "background-image": "url('imges/clear.jpg')",
-            "background-position": "center center"
+            "background-position": "center center",
+            "background-repeat": "no-repeat",
+            "background-size" : "cover"
         });
     } else if (result.weather[0].main === "Thunderstorm") {
         $("body").css({
             "background-image": "url('imges/Thunderstorm.jpg')",
-            "background-position": "center center"
+            "background-position": "center center",
+            "background-repeat": "no-repeat",
+            "background-size" : "cover"
         });
     } else if (result.weather[0].main === "Drizzle") {
         $("body").css({
             "background-image": "url('imges/Drizzle.jpg')",
-            "background-position": "center center"
+            "background-position": "center center",
+            "background-repeat": "no-repeat",
+            "background-size" : "cover"
         });
     } else if (result.weather[0].main === "Rain") {
         $("body").css({
             "background-image": "url('imges/rain.jpg')",
-            "background-position": "center center"
+            "background-position": "center center",
+            "background-repeat": "no-repeat",
+            "background-size" : "cover"
         });
     } else if (result.weather[0].main === "Snow") {
         $("body").css({
             "background-image": "url('imges/snow.jpg')",
-            "background-position": "center center"
+            "background-position": "center center",
+            "background-repeat": "no-repeat",
+            "background-size" : "cover"
         });
     } else if (result.weather[0].main === "Atmosphere") {
         $("body").css({
             "background-image": "url('imges/Atmosphere.jpg')",
-            "background-position": "center center"
+            "background-position": "center center",
+            "background-repeat": "no-repeat",
+            "background-size" : "cover"
         });
     } else {
         $("body").css({
             "background-image": "url('imges/Atmosphere.jpg')",
-            "background-position": "center center"
+            "background-position": "center center",
+            "background-repeat": "no-repeat",
+            "background-size" : "cover"
         });
     }
     // 뉴스
