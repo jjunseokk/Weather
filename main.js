@@ -135,7 +135,7 @@ let url;
 // api 호출 함수를 부른다.
 const getNews = async () => {
     try {
-        let header = new Headers({ 'x-api-key': 'kx9aI0Zn2_2HY3uZmdSK4wdY4vWO4dTyPEsBzcIVz5U' });
+        let header = new Headers({ 'x-api-key': 'YyWPEejOB78qp7EclzhMNYfaSo2mov-RlyVF_MTcZMU' });
 
         url.searchParams.set('page', page); //page 움직일때 키를 준다.
         let response = await fetch(url, { headers: header }); //ajax, http, fetch /*await은 이 일이 끝날때까지 기다려라 라는 뜻.*/
