@@ -189,7 +189,7 @@ const getNewsBykeyword = async () => {
 const render = () => {
     let newsHTML = ``;
     newsHTML = news.map(item => {
-        return `<div class="row news">
+        return `<div class="row news font-color">
             <div class="col-lg-4">
                 <img class="news-img-size" src="${item.media}" alt="" style="width:100%">
             </div>
