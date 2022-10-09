@@ -246,7 +246,7 @@ header{
         justify-content: center;
         flex-wrap: wrap;
         border-top: 1px solid #ebebeb;
-        border-bottom: 4px double #000;
+        border-bottom: 4px double var(--color);
     }
 }
 .inputArea{
@@ -289,7 +289,7 @@ header{
 }
 
 .news{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     padding: 10px 0px;
 }
 
