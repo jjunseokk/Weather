@@ -5,14 +5,18 @@
 }
 body{
     background-size: cover;
+    color: var(--text-color);
 }
 a{
     text-decoration: none;
 }
+.font-color{
+    color: var(--text-color);
+}
 .container{
     /* width: 100%; */
     height: auto;
-    background-color: rgba(255,255,255,.6);
+    background-color: rgba(0,0,0,.6);
     /* margin: 0 auto; */
 }
 
