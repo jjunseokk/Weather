@@ -4,7 +4,6 @@
     --color : #fff;
 }
 body{
-    /* background: url("imges/weather.jpg") no-repeat center center; */
     background-size: cover;
 }
 a{
@@ -24,7 +23,6 @@ header{
 }
 
 #search-area{
-    width: 50%;
     border-bottom: 1px solid var(--color);
     padding: 10px;
 }
@@ -98,19 +96,17 @@ header{
         border: none;
         color: var(--text-color);
     }
+    .first-line, .second-line, .third-line, .fourth-line{
+        padding: 10px 0px;
+        /* border: 1px solid red; */
+    }
     .first-span, .second-span, .third-span, .fourth-span{
         font-size: 1em;
         display: block;
-        /* position: absolute; */
-        /* right: 270px; */
+        /* position: absolute;
+        right: 0px; */
     }
-    .first-line, .second-line, .third-line, .fourth-line{
-        margin: 10px auto;
-        width: 500px;
-        font-size: 1em;
-        padding: 15px;
-        position: relative;
-    }
+
     #mySidenav {
         height: 100%;
         width: 50%;
@@ -169,18 +165,22 @@ header{
         border: none;
         color: var(--text-color);
     }
+    .weather-text{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 15px;
+    }
+    .first-line, .second-line, .third-line, .fourth-line{
+        padding: 10px 0px;
+        /* border: 1px solid red; */
+    }
     .first-span, .second-span, .third-span, .fourth-span{
         font-size: 1em;
         position: absolute;
-        right: 170px;
+        right: 10px;
     }
-    .first-line, .second-line, .third-line, .fourth-line{
-        margin: 10px auto;
-        width: 500px;
-        font-size: 1em;
-        padding: 15px;
-        position: relative;
-    }
+
     #mySidenav {
         display: none;
     }
@@ -205,24 +205,30 @@ header{
         font-weight: bold;
         color: var(--text-color);
     }
+    .search-area{
+        width: 500px;
+    }
     #w-city{
-        width: 300px;
+        width: 500px;
         height: 40px;
         background-color: transparent;
         border: none;
         color: var(--text-color);
     }
+    .weather-text{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 15px;
+    }
+    .first-line, .second-line, .third-line, .fourth-line{
+        padding: 20px 0px;
+        /* border: 1px solid red; */
+    }
     .first-span, .second-span, .third-span, .fourth-span{
         font-size: 1em;
         position: absolute;
-        right: 60px;
-    }
-    .first-line, .second-line, .third-line, .fourth-line{
-        margin: 10px auto;
-        width: 500px;
-        font-size: 1.5em;
-        padding: 15px;
-        position: relative;
+        right: 10px;
     }
     #mySidenav {
         display: none;
