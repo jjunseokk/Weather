@@ -5,6 +5,9 @@
 }
 body{
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--text-color);
 }
 a{
@@ -297,4 +300,9 @@ header{
     display: flex;
     justify-content: center;
     padding: 10px 0px;
+}
+.page-item.active .page-link{
+    background-color: burlywood;
+    color: white;
+    border-color: burlywood;
 }
