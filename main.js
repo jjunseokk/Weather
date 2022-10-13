@@ -35,9 +35,8 @@ $(function () {
 });
 
 
-
-// 현재 날씨
-$.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=37.5666805&lon=126.9784147&appid=1255e4aac90af2ff4a1905e43962ab4b&units=metric", function (result) {
+$.getJSON(`https://api.openweathermap.org/data/2.5/weather?q=Seoul&limit=5&appid=1255e4aac90af2ff4a1905e43962ab4b&units=metric`, function (result) {
+    
 
     // 현재온도
     $(".temp").append(result.main.temp); //현재온도
@@ -53,63 +52,37 @@ $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=37.5666805&lon=12
     
     if (result.weather[0].main === "Clouds") {
         $("body").css({
-            "background-image": "url('imges/weather.jpg')",
-            "background-position": "center center",
-            "background-repeat": "no-repeat",
-            "background-size" : "cover"
+            "background-image": "url('imges/weather.jpg')"
         });
     } else if (result.weather[0].main === "Clear") {
         $("body").css({
-            "background-image": "url('imges/clear.jpg')",
-            "background-position": "center center",
-            "background-repeat": "no-repeat",
-            "background-size" : "cover"
+            "background-image": "url('imges/clear.jpg')"
         });
     } else if (result.weather[0].main === "Thunderstorm") {
         $("body").css({
-            "background-image": "url('imges/Thunderstorm.jpg')",
-            "background-position": "center center",
-            "background-repeat": "no-repeat",
-            "background-size" : "cover"
+            "background-image": "url('imges/Thunderstorm.jpg')"
         });
     } else if (result.weather[0].main === "Drizzle") {
         $("body").css({
-            "background-image": "url('imges/Drizzle.jpg')",
-            "background-position": "center center",
-            "background-repeat": "no-repeat",
-            "background-size" : "cover"
+            "background-image": "url('imges/Drizzle.jpg')"
         });
     } else if (result.weather[0].main === "Rain") {
         $("body").css({
-            "background-image": "url('imges/rain.jpg')",
-            "background-position": "center center",
-            "background-repeat": "no-repeat",
-            "background-size" : "cover"
+            "background-image": "url('imges/rain.jpg')"
         });
     } else if (result.weather[0].main === "Snow") {
         $("body").css({
-            "background-image": "url('imges/snow.jpg')",
-            "background-position": "center center",
-            "background-repeat": "no-repeat",
-            "background-size" : "cover"
+            "background-image": "url('imges/snow.jpg')"
         });
     } else if (result.weather[0].main === "Atmosphere") {
         $("body").css({
-            "background-image": "url('imges/Atmosphere.jpg')",
-            "background-position": "center center",
-            "background-repeat": "no-repeat",
-            "background-size" : "cover"
+            "background-image": "url('imges/Atmosphere.jpg')"
         });
     } else {
         $("body").css({
-            "background-image": "url('imges/Atmosphere.jpg')",
-            "background-position": "center center",
-            "background-repeat": "no-repeat",
-            "background-size" : "cover"
+            "background-image": "url('imges/Atmosphere.jpg')"
         });
     }
-    // 뉴스
-
 });
 
 // 뉴스
